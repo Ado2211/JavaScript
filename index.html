@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <input type="number" id="input_a" value="0"><br>
+    <input type="number" id="input_b" value="0"><br>
+    <p id="res">0</p>
+
+    <script>
+        function izracunaj() {
+            let a = document.querySelector('#input_a');
+            let b = document.querySelector('#input_b');
+
+            let vrA = Number (a.value);
+            let vrB = Number (b.value);
+
+            let r = vrA * vrB;
+            document.querySelector('#res') .innerText = r;
+        }
+
+        function init() {
+            let a = document.querySelector('#input_a');
+            let b = document.querySelector('#input_b');
+
+            a.addEventListener('change', izracunaj);
+            b.addEventListener('change', izracunaj);
+        }
+
+
+        window.addEventListener('load', init);
+    </script>
+
+</body>
+
+</html>
