@@ -7,33 +7,13 @@
 </head>
 
 <body>
-    <input type="number" id="input_a" value="0"><br>
-    <input type="number" id="input_b" value="0"><br>
-    <p id="res">0</p>
+    Unesi ime: <input type="text" id="ime">
+    <button id="dodaj-ime-dugme">Dodaj</button>
 
-    <script>
-        function izracunaj() {
-            let a = document.querySelector('#input_a');
-            let b = document.querySelector('#input_b');
+    <div id="imena">
+    </div>
 
-            let vrA = Number (a.value);
-            let vrB = Number (b.value);
-
-            let r = vrA * vrB;
-            document.querySelector('#res') .innerText = r;
-        }
-
-        function init() {
-            let a = document.querySelector('#input_a');
-            let b = document.querySelector('#input_b');
-
-            a.addEventListener('change', izracunaj);
-            b.addEventListener('change', izracunaj);
-        }
-
-
-        window.addEventListener('load', init);
-    </script>
+    <script src="main.js"></script>
 
 </body>
 
