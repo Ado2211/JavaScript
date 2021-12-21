@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proba</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="poruka"></div>
+
+    Ime: <input id="ime" type="text"><br>
+    ???
+
+    <script>
+        window.addEventListener('load', init);
+
+        function init() {
+            let e = document.getElementById('ime');
+
+            e.addEventListener('keyup', proveriIme);
+        }
+        function proveriIme() {
+            let e = document.getElementById('ime');
+            let ime = e.value;
+
+            let poruka = '';
+
+            if (ime.length < 3 || ime.length >20 ) {
+                poruka = 'ime nije ispravno!';
+            }
+        let pe = document.getElementById('poruka');
+
+        pe.innerText = poruka;
+
+        }
+
+        
+    </script>
+</body>
+
+</html>
