@@ -4,102 +4,76 @@
     <title>Proba</title>
     <meta charset="utf-8">
     <style>
-        #kalendar {
-            border: 4px solid darkblue;
+        #zaposleni {
+            border: 3px solid black;
             border-collapse: collapse;
         }
 
-        #kalendar thead tr th {
+        #zaposleni th {
+            border: 1px solid #999;
+            padding: 3px;
             font-size: 10pt;
-            background-color: #57A;
-            color: #fff
+            background-color: dc0000;
+            color: white;
         }
 
-        #kalendar tbody tr td {
-            border: 1px dashed #57A;
-            padding: 5px;
-            width: 30px;
-            height: 40px;
-            font-size: 9pt;
-            text-align: right;
-            vertical-align: top;
+        #zaposleni tbody tr td {
+            border-bottom: 1px dashed black;
         }
 
-        #kalendar tbody tr:nth-child(odd) td {
-            background-color: #f8f8f8;
-        }
-
-        #kalendar tbody tr td:last-child {
-            background-color: #fa9;
-        }
-
-        #kalendar tbody tr td:nth-child(6) {
+        #zaposleni tfoot tr {
             background-color: #eee;
         }
 
-        .current-day {
-            background-color: #dc0000;
-            color: #fff
+        #zaposleni tbody tr td:nth-child(1),
+        #zaposleni tbody tr td:nth-child(3),
+        #zaposleni tfoot tr td:nth-child(3) {
+            text-align: right;
+        }
+
+        #plata-zaglavlje {
+            vertical-align: bottom;
+        }
+
+        #suma-labela {
+            vertical-align: top;
         }
     </style>
 </head>
 
 <body>
-    <table id="kalendar">
+    <table id="zaposleni">
         <thead>
             <tr>
-                <th colspan="7">maj 2019
+                <th colspan="2">Maj 2019
+                <th rowspan="2" id="plata-zaglavlje">Iznos Plate
             <tr>
-                <th>Pon
-                <th>Uto
-                <th>Sri
-                <th>Čet
-                <th>Pet
-                <th>Sub
-                <th>Ned
+                <th>R. br.
+                <th>Ime i prezime
+
         <tbody>
             <tr>
-                <td>
-                <td>
-                <td>1
-                <td>2
-                <td>3
-                <td>4
-                <td>5
+                <td>1.
+                <td>Pera Perić
+                <td>700 EUR
             <tr>
-                <td>6
-                <td>7
-                <td>8
-                <td class="current-day">9
-                <td>10
-                <td>11
-                <td>12
+                <td>2.
+                <td>Milica milić
+                <td>800 EUR
             <tr>
-                <td>13
-                <td>14
-                <td>15
-                <td>16
-                <td>17
-                <td>18
-                <td>19
+                <td>3.
+                <td>Milan Milić
+                <td>600 EUR
             <tr>
-                <td>20
-                <td>21
-                <td>22
-                <td>23
-                <td>24
-                <td>25
-                <td>26
+                <td>4.
+                <td>Tijana Tijanić
+                <td>700 EUR
+        <tfoot>
             <tr>
-                <td>27
-                <td>28
-                <td>29
-                <td>30
-                <td>31
-                <td>
-                <td>
+                <td colspan="2" id="suma-labela">Suma:
+                <td>2800 EUR
     </table>
 
 </body>
 
-</html>
+</html> 
