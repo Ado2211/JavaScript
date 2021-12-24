@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Proba</title>
+    <meta charset="utf-8">
+    <style>
+        #zaposleni {
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+
+        #zaposleni th {
+            border: 1px solid #999;
+            padding: 3px;
+            font-size: 10pt;
+            background-color: dc0000;
+            color: white;
+        }
+
+        #zaposleni tbody tr td {
+            border-bottom: 1px dashed black;
+        }
+
+        #zaposleni tfoot tr {
+            background-color: #eee;
+        }
+
+        #zaposleni tbody tr td:nth-child(1),
+        #zaposleni tbody tr td:nth-child(3),
+        #zaposleni tfoot tr td:nth-child(3) {
+            text-align: right;
+        }
+
+        #plata-zaglavlje {
+            vertical-align: bottom;
+        }
+
+        #suma-labela {
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="zaposleni">
+        <thead>
+            <tr>
+                <th colspan="2">Maj 2019
+                <th rowspan="2" id="plata-zaglavlje">Iznos Plate
+            <tr>
+                <th>R. br.
+                <th>Ime i prezime
+
+        <tbody>
+            <tr>
+                <td>1.
+                <td>Pera Perić
+                <td>700 EUR
+            <tr>
+                <td>2.
+                <td>Milica milić
+                <td>800 EUR
+            <tr>
+                <td>3.
+                <td>Milan Milić
+                <td>600 EUR
+            <tr>
+                <td>4.
+                <td>Tijana Tijanić
+                <td>700 EUR
+        <tfoot>
+            <tr>
+                <td colspan="2" id="suma-labela">Suma:
+                <td>2800 EUR
+    </table>
+
+</body>
+
+</html>
