@@ -1,0 +1,8 @@
+.obojeno {
+    width: 500px;
+    height: 280px;
+    border: 2px solid black;
+
+    background: linear-gradient(to right, rgba(255, 0, 0, 50%), transparent), 
+    linear-gradient(to bottom, rgba(0, 0, 255, 50%), transparent)
+}
