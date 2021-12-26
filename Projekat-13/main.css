@@ -1,0 +1,57 @@
+nav {
+    display: flex;
+    width: 500px;
+
+}
+
+nav>div {
+    flex-basis: 0;
+    flex-grow: 1;
+    position: relative;
+    border-right: 1px solid gray;
+}
+
+nav>div:last-child {
+    border-right: none;
+}
+
+nav>div>a {
+    display: block;
+    padding: 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #dc0000;
+    transition: 150ms;
+}
+
+nav>div>a:hover {
+    background-color: #dc0000;
+    color: #fff;
+    transition: 200ms;
+}
+
+nav>div>div>a {
+    display: block;
+    padding: 5x 0px;
+    text-decoration: none;
+    color: #dc0000;
+    transition: 200ms;
+}
+
+nav>div>div>a:hover {
+    background-color: #dc0000;
+    color: #fff;
+}
+
+nav>div>div {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    background-color: #fff;
+left: -1.5px
+
+}
+
+nav>div:hover>div {
+    display: block;
+}
