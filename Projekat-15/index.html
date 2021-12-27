@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proba</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div> <video width="500" controls id="video1">
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div>
+        <button type="button" onclick="playVideo();">Play</button>
+
+        <button type="button" onclick="pauseVideo();">Pause</button>
+
+        <button type="button" onclick="seekTo(0);">Start</button>
+
+        <button type="button" onclick="setSpeed(0.5);">Very slow</button>
+
+        <button type="button" onclick="setSpeed(1);">Normal</button>
+
+        <button type="button" onclick="setSpeed(2);">Very fast</button>
+
+        <span id="procenti">0%</span>
+
+    </div>
+
+    <progress id="progress"></progress>
+
+    <div id="dnevnik">
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
