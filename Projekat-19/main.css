@@ -1,0 +1,39 @@
+#app {
+    display:flex;
+}
+
+#left, #right {
+    flex-grow: 1;
+    flex-basis: 0;
+    
+}
+
+#right {
+    margin-left: 10px;
+}
+
+title {
+    border-bottom : 2px solid black;
+    margin: 10px 0px
+}
+
+#content {
+    margin: 10px 0px;
+}
+
+.vest {
+    display: flex;
+    margin: 5px 0px;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+}
+
+.vest > img {
+    width: 93px;
+    height: auto;
+}
+
+.vest > span {
+    flex-grow: 1;
+    padding-left: 0px;
+}
