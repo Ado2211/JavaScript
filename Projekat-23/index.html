@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mapiranje slika</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <img src="Screenshot_9.jpg" alt="Sala" usemap="#mapa-sale" id="slika-sale">
+
+    <div id="message-box"></div>
+    <div id="message-box-2"></div>
+
+    <map name="mapa-sale">
+
+        <area shape="rect" data-coords="820, 176, 916, 225" 
+        onmouseover="tell('Nebo');"
+        onclick="reserve('Baš želimo to da vidimo');">
+        
+        <area shape="circle" data-coords="491, 189, 51" 
+        onmouseover="tell('Lijevi luster');"
+        onclick="reserve('Svejedno nam je');">
+       
+        <area shape="circle" data-coords="1253, 194, 51" 
+        onmouseover="tell('Desni luster');"
+        onclick="reserve('Ovo je još bolje');">
+        
+        <area shape="poly" data-coords="70, 430,712, 392, 843, 412, 557, 714, 62, 515"
+            onmouseover="tell('Lijevi red klupa');"
+            onclick="reserve('Rezervisali ste mjesto, lijevi red klupa');">
+        
+            <area shape="poly" data-coords="1663, 424, 1011, 395, 900, 418, 1158, 701, 1666, 529"
+            onmouseover="tell('Desni red klupa');"
+            onclick="reserve('Rezervisali ste mjesto, desni red klupa');">
+    </map>
+
+
+    <!--1663, 424, 1011, 395, 900, 418, 1158, 701, 1666, 529-->
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
