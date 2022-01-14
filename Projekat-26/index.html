@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tab Index</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <label for="ime"><u>F</u>orename:</label><br>
+    <input type="text" id="forename" tabindex="1" accesskey="F" aria-labelledby="label_for_forename">
+
+    <button type="button" accesskey="R" onclick="register()"><u>R</u>egister</button><br>
+    <small id="label_for_forename">Please enter your first name in this field</small><br>
+
+    <label for="prezime"><u>S</u>urname:</label><br>
+    <input type="text" id="surname" tabindex="2" accesskey="S" aria-labelledby="label_for_surname"><br>
+    <small id="label_for_surname">Please enter your familly name in this field</small><br>
+
+    <label for="country"><u>C</u>ountry:<label><br>
+            <select id="country" tabindex="3" accesskey="c" aria-labelledby="label_for_country">
+                <option value="1">Bosnia and Herzegovina</option>
+                <option value="2">Croatia</option>
+                <option value="3">Serbia</option>
+                <option value="4">Slovenia</option>
+                <option value="5">Montenegro</option>
+                <option value="6">Northern Macedonia</option>
+            </select><br>
+            <small id="label_for_country">Please select your country</small><br>
+            
+            <button type="button" accesskey="e" tabbindex="7" onclick="resetForm();">R<u>e</u>set Form</button><br>
+
+            <p id="message" aria-live="polite" aria-atomic="true"></p>
+
+<script src="main.js"></script>
+</html>

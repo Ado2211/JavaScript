@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tab Index</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <label for="ime"><u>F</u>orename:</label><br>
+    <input type="text" id="forename" tabindex="1" accesskey="F">
+
+    <button type="button" accesskey="R"><u>R</u>egister</button><br>
+
+    <label for="prezime"><u>S</u>urname:</label><br>
+    <input type="text" id="surname" tabindex="2" accesskey="S"><br>
+
+    <label for="country"><u>C</u>ountry:<label><br>
+            <select id="country" tabindex="3" accesskey="c">
+                <option value="1">Bosnia and Herzegovina</option>
+                <option value="2">Croatia</option>
+                <option value="3">Serbia</option>
+                <option value="4">Slovenia</option>
+                <option value="5">Montenegro</option>
+                <option value="6">Northern Macedonia</option>
+            </select><br>
+
+            <button type="button" accesskey="e" tabbindex="7">R<u>e</u>set Form</button><br>
+
+            <p id="message"></p>
+
+</html>
