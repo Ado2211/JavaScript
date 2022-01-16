@@ -1,0 +1,24 @@
+.skala {
+    --boja: 0;
+    --ugao: -90deg;
+
+    width: 400px;
+    height: 200px;
+    border: 10px solid rgb( var(--boja), calc(255 - var(--boja)), 0 );
+    position: relative;
+    transition: 750ms;
+    margin-bottom: 10px;
+}
+
+.igla {
+    position: absolute;
+    width: 20px;
+    height: 150px;
+    left: 190px;
+    bottom: 10px;
+    transform-origin: 5px 150px;
+    transition: 750ms;
+
+    transform: rotate(var(--ugao));
+    background-color: rgb( var(--boja), calc(255 - var(--boja)), 0 );
+}
