@@ -1,9 +1,10 @@
-function hidePopup () {
+function hidePopup() {
     let popup = document.getElementById('gallery-preview');
     popup.classList.remove('visible');
 }
 function init() {
     bindGalleryItems();
+    bindKeyDown();
 }
 
 function bindGalleryItems() {
@@ -24,8 +25,21 @@ function showImage(event) {
     image.src = link;
 
     let popup = document.getElementById('gallery-preview');
-    
+
     popup.classList.add('visible');
 }
+
+function bindKeyDown() {
+    window.addEventListener('keydown', keyDownHandler);
+}
+
+function keyDownHandler(event) {
+    switch (event.key) {
+        case "Escape":
+            hidePopup();
+            break;
+    }
+}
+
 
 window.addEventListener('load', init);
