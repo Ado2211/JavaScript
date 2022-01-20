@@ -1,0 +1,26 @@
+.tags {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.tags .list {
+    display: inline-block;
+}
+
+.tags input {
+    border: none;
+}
+
+.tags input:focus {
+    border: none;
+    outline: none;
+}
+
+.tags .list .tag {
+    background-color: #dc0004;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 15px 5px 10px;
+    margin-right: 4px;
+}
+
