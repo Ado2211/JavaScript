@@ -1,6 +1,6 @@
 .tags {
     border: 1px solid black;
-    padding: 5px;
+    padding: 10px 5px;
 }
 
 .tags .list {
@@ -9,6 +9,7 @@
 
 .tags input {
     border: none;
+    color: #dc0004;
 }
 
 .tags input:focus {
@@ -20,7 +21,16 @@
     background-color: #dc0004;
     border-radius: 10px;
     color: #fff;
-    padding: 5px 15px 5px 10px;
-    margin-right: 4px;
+    padding: 5px 5px 5px 10px;
+    margin: 5px 4px 5px 0px;
 }
 
+.tags .list .tag button {
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #dc0004;
+    top: 3px;
+    right: 3px;
+    cursor:pointer;
+}
