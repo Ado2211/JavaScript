@@ -65,6 +65,6 @@ function popuniTeloKalendara(nedelje) {
 window.addEventListener('load', main);
 
 function main() {
-    let sada = new Date();
     popuniKalendar(2021, 12);
 }
+
