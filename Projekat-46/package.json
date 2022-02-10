@@ -1,0 +1,26 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ado2211/JavaScript.git"
+  },
+  "author": "Adnan Mahmić <mahmica@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ado2211/JavaScript/issues"
+  },
+  "homepage": "https://github.com/Ado2211/JavaScript#readme",
+  "dependencies": {
+    "mysql2": "^2.3.3"
+  }
+}
