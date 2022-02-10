@@ -12,19 +12,20 @@ const connection = mysql.createConnection({
     database: 'aplikacija'
 })
 
-connection.query(
-    'SELECT * FROM category WHERE parent__category_id = ?;',
-    [ 1 ],
-    prikaziKategorije
-);
+connection
+.promise()
+//.query('SELECT * FROM category WHERE parent__category_id IS NULL;')
+.query('SELECT * FROM category WHERE parent__category_id = ?;', [ 1 ])
+.then(prikaziKategorije)
+.catch(error => {
+    console.log('Došlo je do greške: ',error);
+})
+/*.then(() => {
+    connection.end(); ----zaustaviti app
+});*/
 
-function prikaziKategorije(error, categories, fields) {
-    if (error) {
-        console.log('Doslo je do neke greske: ',error);
-        return;
-    }
-
+function prikaziKategorije( [categories, fields ]) {
     for (let category of categories) {
-        console.log('Ucitana kategorija:',category.name)
+        console.log('Učitana kategorija: ', category.name);
     }
 }
