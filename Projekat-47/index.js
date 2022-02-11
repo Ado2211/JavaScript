@@ -14,7 +14,7 @@ async function requestHandler(request, response) {
 
     response.writeHead(200, {
         'Content-type': 'application/json'
-    });
+    });  
 
     response.write(JSON.stringify(data));
     response.end();
